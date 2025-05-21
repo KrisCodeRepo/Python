@@ -1,0 +1,1 @@
+print('Little by little, one travels far.')
