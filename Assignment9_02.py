@@ -10,6 +10,8 @@ counts = dict()
 for line in handle:
     if line.startswith('From '):
         words = line.split()
+        email = words[1]
+        domain = email.split('@') 
         time = words[5]  # Get the time part
         hour = time.split(':')[0]  # Split by colon and take the hour part
         counts[hour] = counts.get(hour, 0) + 1
